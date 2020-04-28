@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;;
+        }
+.listing-parameters .parameter {
+    display: inline-block;
+    margin: 20px 0 20px 20px;
+    padding: 0 20px 0 0;
+}
+.listing-parameters .parameter:not(:last-child) {
+    border-right: 1px solid #ddd;
+}
+.listing-parameters .parameter .parameter-title {
+    display: inline-block;
+    color: #9c9c9c;
+    font-size: 0.875em;
+    margin: 0 0 5px 0;
+}
+.listing-parameters .parameter .parameter-value {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.listing-parameters .parameter .parameter-value sup {
+    font-size: 0.6em;
+}
+.listing-parameters .parameter.parameter-price {
+    float: right;
+    margin: 0;
+    padding: 20px 30px;
+    text-align: right;
+}
+.card.details {
+    margin: 0 0 20px 0;
+    padding: 20px;
+}
+.card.details .paramterers::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+.card.details .paramterers table {
+    padding: 15px 0;
+    table-layout: fixed;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        width: 50%;
+    }
+}
+.card.details .paramterers table tr td {
+    font-size: 0.875em;
+    padding: 10px 0;
+}
+.card.details .paramterers table tr td:nth-child(odd) {
+    font-weight: bold;
+}
+.card.details .paramterers table tr td.is-empty {
+    color: #cfcfcf;
+}
+.card.details .paramterers table:first-of-type {
+    @media screen and (min-width: 768px) {
+        border-right: 1px solid #ddd;
+    }
+}
+.card.details .paramterers table:last-of-type tr td:first-of-type {
+    @media screen and (min-width: 768px) {
+        padding-left: 20px;
+    }
+}
+.card .card-title {
+    font-size: 1.25em;
+    font-weight: bold;
+    line-height: 1.25em;
+    margin: 0 0 20px 0;
+}
+.paramterers {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+.container {
+    max-width: 640px;
+    margin: 0 auto;
+}
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images img + img {
+    margin-top: 1rem;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="listing-parameters">
+            <div class="parameter parameter-area-size">
+                <span class="parameter-title">Alapterület</span>
+                <span class="parameter-value">52 m²</span>
+            </div>
+            <div class="parameter parameter-room">
+                <span class="parameter-title">Szobák száma</span>
+                <span class="parameter-value"> 1 </span>
+            </div>
+            <div
+            class="parameter parameter-room"
+            >
+                <span class="parameter-title">Ár</span>
+                <span class="parameter-value">34,9 millió Ft</span>
+            </div>
+        </div>
+        <div class="card details">
+            <h2 class="card-title">Eladó tégla építésű lakás</h2>
+            <div class="paramterers">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Ingatlan állapota</td>
+                            <td>közepes állapotú</td>
+                        </tr>
+                        <tr>
+                            <td>Építés éve</td>
+                            <td>1950 előtt</td>
+                        </tr>
+                        <tr>
+                            <td>Komfort</td>
+                            <td>összkomfortos</td>
+                        </tr>
+                        <tr>
+                            <td>Energiatanúsítvány</td>
+                            <td class="is-empty">nincs megadva</td>
+                        </tr>
+                        <tr>
+                            <td>Emelet</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>Épület szintjei</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>Lift</td>
+                            <td>van</td>
+                        </tr>
+                        <tr>
+                            <td>Belmagasság</td>
+                            <td>3 m-nél alacsonyabb</td>
+                        </tr>
+                        <tr>
+                            <td>Fűtés</td>
+                            <td>elektromos, gáz (cirko)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Akadálymentesített</td>
+                            <td class="is-empty">nincs megadva</td>
+                        </tr>
+                        <tr>
+                            <td>Fürdő és WC</td>
+                            <td>külön helyiségben</td>
+                        </tr>
+                        <tr>
+                            <td>Tájolás</td>
+                            <td>nyugat</td>
+                        </tr>
+                        <tr>
+                            <td>Kilátás</td>
+                            <td>panorámás</td>
+                        </tr>
+                        <tr>
+                            <td>Erkély</td>
+                            <td>30 m²</td>
+                        </tr>
+                        <tr>
+                            <td>Kertkapcsolatos</td>
+                            <td class="is-empty">nincs megadva</td>
+                        </tr>
+                        <tr>
+                            <td>Tetőtér</td>
+                            <td>legfelső emelet, nem tetőtéri</td>
+                        </tr>
+                        <tr>
+                            <td>Parkolás</td>
+                            <td>utca, közterület - fizetős övezet</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="long-description">
+                KIVÉTELES AJÁNLAT!<br /><br />XI. kerület központjában, zöldövezetben, a
+                népszerű Fadrusz utcában eladó jelenleg 1 szobás, napfényes, hatalmas
+                panorámateraszos lakás, amely a jó lakóközösségű, kiváló állapotú,
+                karbantartott, 48 lakásos társasház legfelső, 6. emeletén található,
+                zárt liftes lépcsőházból nyílik.<br />Közepes állapotú, az utcafronti
+                nyílászárók cserélve lettek, fűtése egyedi, cirkófűtés ki van alakítva,
+                de nincs kazán, jelenleg elektromos fűtés lehetséges, a meleg vizet
+                villanybojler adja. A lakásban nincs gázszolgáltatás bekötve, de igény
+                szerint visszaállítható.<br />A lakás könnyen átalakítható, a
+                fürdőszobából a tetőtérbe nyílik egy kizárólagos használatú tároló, ami
+                nettó 10 m2 (bruttó 25 m2) területű, ebből egy plusz hálószoba lehet.
+                <br />Kiváló az elhelyezkedése és a közlekedés, a Kosztolányi Dezső tér,
+                a Feneketlen-tó pár perc sétával elérhető, a Móricz Zsigmond körtér és
+                Új Buda Központ 5 percen belül található, egyetemek 15 percen belül, a
+                belváros szintén 20 percen belül elérhető.<br /><br />További
+                részletekért hívjon MOST!<br /><br />Ügyfeleink számára rendelkezésre
+                áll megbízható ügyvédi háttér, bankfüggetlen, díjmentes hiteltanácsadás,
+                energetikai tanúsítvány készítése, home-staging, szakértő értékesítés,
+                kiemelt ingatlankeresési szolgáltatás.<br /><br />
+            </div>
+            <div class="images">
+                <img src="31463268_199031233_l.jpg" alt="">
+                <img src="31463268_199031235_l.jpg" alt="">
+                <img src="31463268_199031239_l.jpg" alt="">
+                <img src="31463268_199031244_l.jpg" alt="">
+                <img src="31463268_199031247_l.jpg" alt="">
+                <img src="31463268_199031250_l.jpg" alt="">
+                <img src="31463268_199031254_l.jpg" alt="">
+                <img src="31463268_199031261_l.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
